@@ -9,6 +9,7 @@
     background: $main-color;
     overflow: hidden;
 
+    // item deerh deesheegee shar boxiig bairluulah haragdahgvi bolgoh
     &::after {
         content: '';
         position: absolute;
@@ -23,19 +24,24 @@
         transition: transform 2s cubic-bezier(0.2, 1, 0.3, 1);
     }
 
+    // item bvr deerh shar over diagonalaar gvij gargah
+    // after deer oorchlolt oruulj bna
     &:hover:after {
         transform: scale(2) translateX(0) translateY(0) rotate(-28deg);
     }
 
+    // image zoom in
     &:hover &-image {
         transform: scale(1.2);
     }
 
+    // textiig bairand ni gold awchrah, text haragddag bolgoh
     &:hover &-text {
         opacity: 1;
         transform: translateY(0);
     }
 
+    // textiig baga zereg deeshluulsen haragdahgvi
     &-text {
         position: absolute;
         top: 0;
@@ -51,6 +57,7 @@
         transition-delay: 300ms;
     }
 
+    // textiig item card dotor 50% deesh ni bairluulj bna
     &-text-wrap {
         position: absolute;
         width: 100%;
@@ -58,16 +65,16 @@
         transform: translateY(-50%);
     }
 
-    &-text-title {
-        font-size: 1.5rem;
-        padding: 0 1rem;
-        margin: 5px 0 0 0;
-    }
-
     &-text-category {
         text-transform: uppercase;
         font-size: 1.2rem;
         opacity: 0.7;
         margin: 0;
+    }
+
+    &-text-title {
+        font-size: 1.5rem;
+        padding: 0 1rem;
+        margin: 5px 0 0 0;
     }
 }
